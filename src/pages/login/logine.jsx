@@ -372,7 +372,7 @@ function Login() {
               <div className='poojiinput-field'>
                 <i className='my-auto'><FaUser /></i>
                 <input className='LoginInput' name="rollNumber" value={formValues.rollNumber} onChange={handleChange} type='text' required />
-                <span className={formValues.rollNumber ? 'fill' : ''}> Enter your Roll Number</span>
+                <span className={formValues.rollNumber ? 'fill' : ''}> Enter your Roll Number / Emp ID</span>
               </div>
               <div className='poojiinput-field'>
                 <i className='my-auto'><FaLock /></i>
@@ -394,7 +394,7 @@ function Login() {
               <div className='poojiinput-field'>
                 <i className='my-auto'><MdEmail /></i>
                 <input className='LoginInput' type='email' name="email1" value={formValues.email1} onChange={handleChange} required />
-                <span className={formValues.email1 ? 'fill' : ''}>Enter your email id</span>
+                <span className={formValues.email1 ? 'fill' : ''}>Enter your Gmail</span>
               </div>
               {errorMessage && <p className="poojierror-message">{errorMessage}</p>}
               <button className='btn' type="submit" onClick={handlePhoneSubmit}>Submit</button>
@@ -407,7 +407,7 @@ function Login() {
                     <div className='poojiinput-field'>
                       <i className='my-auto'><MdEmail /></i>
                       <input className='LoginInput' type='email' name="email1" value={formValues.email1} onChange={handleChange} required />
-                      <span className={formValues.email1 ? 'fill' : ''}>Enter your email id</span>
+                      <span className={formValues.email1 ? 'fill' : ''}>Enter your Gmail</span>
                     </div>
                     <a> back to Log in?</a>
                     {errorMessage && <p className="poojierror-message">{errorMessage}</p>}
@@ -461,7 +461,7 @@ function Login() {
               <div className='poojiinput-field'>
                 <i className='my-auto'><FaUser /></i>
                 <input className='LoginInput' name="rollNumber" value={formValues.rollNumber} onChange={handleChange} type='text' required />
-                <span className={formValues.rollNumber ? 'fill' : ''}> Enter your Roll Number</span>
+                <span className={formValues.rollNumber ? 'fill' : ''}> Enter your Roll Number / Emp ID</span>
               </div>
               <div className='poojiinput-field'>
                 <i className='my-auto'><FaLock /></i>
@@ -486,12 +486,12 @@ function Login() {
               <div className='poojiinput-field'>
                 <i className='my-auto'><FaUser /></i>
                 <input className='LoginInput' name="rollNumber1" value={formValues.rollNumber1} onChange={handleChange} type='text' required />
-                <span className={formValues.rollNumber1 ? 'fill' : ''}> Enter your Roll Number</span>
+                <span className={formValues.rollNumber1 ? 'fill' : ''}> Enter your Roll Number / Emp ID</span>
               </div>
               <div className='poojiinput-field'>
                 <i className='my-auto'><MdEmail /></i>
                 <input className='LoginInput' type='email' name="email" value={formValues.email} onChange={handleChange} required />
-                <span className={formValues.email ? 'fill' : ''}>Enter your email id</span>
+                <span className={formValues.email ? 'fill' : ''}>Enter your Gmail</span>
               </div>
               <div className='poojiinput-field'>
                 <i className='my-auto'><FaLock /></i>
