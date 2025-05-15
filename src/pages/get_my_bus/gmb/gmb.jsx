@@ -10,7 +10,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 import CustomLoader from '../../../assets/loader/BusLoader.json';
 
 // Replace with your actual API key
-const GOOGLE_MAPS_API_KEY = 'AIzaSyDE_Mn98wGt9XeCA8GUb02FL8NKuuL4ttU';
+const GOOGLE_MAPS_API_KEY = 'AIzaSyAR0y7DZ4foBBE_75bTffEM0gd-nPZ2ZqM';
 
 function GetMyBus() {
     const [activeGround, setActiveGround] = useState(null);
