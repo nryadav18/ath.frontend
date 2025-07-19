@@ -6,7 +6,7 @@ import './v0map.css'
 import axios from 'axios'
 
 // Replace with your actual API key
-const GOOGLE_MAPS_API_KEY = 'AIzaSyDE_Mn98wGt9XeCA8GUb02FL8NKuuL4ttU'
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
 
 export default function V0Map() {
     const [map, setMap] = useState(null)

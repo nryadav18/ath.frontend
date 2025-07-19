@@ -20,11 +20,11 @@ function App() {
           <Route path="get-my-bus" element={<GetMyBus />} />
           <Route path="live-tracking" element={<LiveTracking />} />
           <Route path="transport-issues" element={<TransportIssues />} />
-          <Route path="user-profile" element={<UserProfile />} />
+          {/* <Route path="user-profile" element={<UserProfile />} /> */}
           <Route path="bus-coordinators" element={<BusCoordinatorCards />} />
           <Route path="home-page" element={<HomePage />} />
+          <Route path="*" element={<Err404 />} />
         </Route>
-        <Route path="*" element={<Err404 />} />
       </Routes>
     </BrowserRouter>
   );

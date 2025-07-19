@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 import './gmaps.css';  // Importing the CSS file
 
+const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
+
 function Gmaps() {
     const [source, setSource] = useState('');
     const [destination, setDestination] = useState('');
@@ -64,7 +66,7 @@ function Gmaps() {
                 Start Navigation in Google Maps
             </button>
 
-            <LoadScript googleMapsApiKey="AIzaSyCSkMcv8BF3Sxv8ugdVIBxxDs8exC8gDW0">
+            <LoadScript googleMapsApiKey={MAPS_API_KEY}>
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '500px', marginTop: '20px', borderRadius: '10px', overflow: 'hidden' }}
                     zoom={8}

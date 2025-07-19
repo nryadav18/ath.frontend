@@ -27,7 +27,7 @@ export default function BusTrackingMap() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyCSkMcv8BF3Sxv8ugdVIBxxDs8exC8gDW0"
+        googleMapsApiKey: import.meta.env.VITE_MAPS_API_KEY
     })
 
     const destinationIcon = isLoaded ? {

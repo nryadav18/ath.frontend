@@ -19,7 +19,7 @@ const HomeNavigation = () => {
     'Get Bus': '/get-my-bus',
     'Track': '/live-tracking',
     'Issues': '/transport-issues',
-    'Profile': '/user-profile'
+    'Profile': '/user-profile' 
   };
 
   const links = Object.keys(menuImages);
