@@ -16,6 +16,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
+    user-select: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+:focus{
+  outline: none;
+}
 /* App.css */

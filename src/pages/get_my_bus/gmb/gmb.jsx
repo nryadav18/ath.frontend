@@ -7,10 +7,10 @@ import { IoMdRefresh } from "react-icons/io";
 import { FaCircle } from "react-icons/fa6";
 import axios from 'axios';
 import { Loader } from '@googlemaps/js-api-loader';
-import CustomLoader from '../../../assets/loader/BusLoader.json';
 
 // Replace with your actual API key
 const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
+
 
 function GetMyBus() {
     const [activeGround, setActiveGround] = useState(null);
@@ -124,7 +124,7 @@ function GetMyBus() {
     return (
         <div className='gmb_main'>
             {/* Google Maps Section */}
-            <div className="gmb_map">
+            <div id = "googleMap" className="gmb_map">
                 <h2 className="map-title">Aditya Bus Directions</h2>
                 <div className="map-directions-container">
                     <div ref={mapRef} className="map-view" />
@@ -190,9 +190,9 @@ function GetMyBus() {
                                         <img src={bus} alt="" />
                                     </div>
                                     <div className="get_directions">
-                                        <div className="get_directions_but" onClick={() => handleGetDirections(item)}>
+                                       <a href="#googleMap"><div className="get_directions_but" onClick={() => handleGetDirections(item)}>
                                             Get Directions
-                                        </div>
+                                        </div></a>
                                     </div>
                                 </div>
                             </div>
