@@ -11,7 +11,7 @@ import { HomePage } from './pages/home/home';
 import Login from './pages/login/logine';
 import LayoutWithSideNav from './pages/layout/LayoutWithSideNav';
 
-function App() {
+function App() { 
   return (
     <BrowserRouter>
       <Routes>

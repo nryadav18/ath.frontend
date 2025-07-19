@@ -18,7 +18,7 @@ const UserProfileShowcase = ({ userData, handleLogout }) => {
     busType,
     busNumber,
     busDriverName,
-    activeStatus,
+    activeStatus, 
   } = userData;
 
   return (
