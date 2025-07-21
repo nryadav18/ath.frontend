@@ -9,7 +9,7 @@ import axios from 'axios';
 import { Loader } from '@googlemaps/js-api-loader';
 
 // Replace with your actual API key
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
+const GOOGLE_VITE_MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
 
 
 function GetMyBus() {
@@ -44,7 +44,7 @@ function GetMyBus() {
     // Initialize Google Maps
     useEffect(() => {
         const loader = new Loader({
-            apiKey: GOOGLE_MAPS_API_KEY,
+            apiKey: GOOGLE_VITE_MAPS_API_KEY,
             version: 'weekly',
             libraries: ['places']
         });

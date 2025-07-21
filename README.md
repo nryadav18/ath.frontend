@@ -1,85 +1,70 @@
-<h1 align="center">🍽️ Food Recipe Finder</h1>
-<p align="center">
-  A responsive and interactive web application that allows users to explore, search, and view a wide variety of recipes with an intuitive user interface.
-</p>
+<h1 align="center">🚍 Aditya Transport Hub (ATH)</h1>
+<h3 align="center">A Smart MERN Stack + IoT-based Transport Management System</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Tech-HTML%2FCSS%2FJS-blue" alt="Tech Used" />
-  <img src="https://img.shields.io/badge/Responsive-Yes-green" alt="Responsive" />
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen" alt="Project Status" />
+  <a href="https://adityatransporthub.vercel.app" target="_blank">
+    🔗 Live Demo
+  </a>
 </p>
 
 ---
 
-## 📸 Preview Screenshots
+## 📌 Overview
 
-> Click on images to enlarge (if supported on GitHub)
-
-### 🔐 Login Page
-<img src="./Web_Images/1.LoginPage.png" alt="Login Page" width="100%" />
-
-### 🏠 Home Page (Top)
-<img src="./Web_Images/2.HomePageTop.png" alt="Home Page Top" width="100%" />
-
-### 🏠 Home Page (Bottom)
-<img src="./Web_Images/3.HomePageDown.png" alt="Home Page Bottom" width="100%" />
-
-### 🍳 Recipes Page
-<img src="./Web_Images/4.RecipesListPage.png" alt="Recipes Page" width="100%" />
-
-### 🍽️ Recipe View Page
-<img src="./Web_Images/5.RecipeViewPage.png" alt="Recipe View Page" width="100%" />
-
-### 🔎 Search Page
-<img src="./Web_Images/6.RecipesSearchPage.png" alt="Search Page" width="100%" />
-
-### 🧾 Item Searching Page
-<img src="./Web_Images/7.RecipeSearchPage.png" alt="Item Searching Page" width="100%" />
-
-### 🍲 Searched Item View Page
-<img src="./Web_Images/8.SearchedRecipeVIewPage.png" alt="Searched Item View Page" width="100%" />
-
-### 💔 Empty Wishlist Page
-<img src="./Web_Images/9.EmptyWishlistPage.png" alt="Empty Wishlist Page" width="100%" />
+Aditya Transport Hub (ATH) is a **MERN Stack + IoT-based Smart Transport Management System** developed to manage university or institutional bus transport operations efficiently. It enables **real-time GPS tracking**, **automated boarding logs**, and **role-based dashboards** for Admins, Drivers, and Students.
 
 ---
 
-## 🚀 Live Demo
+## 🧠 Key Features
 
-> Add your GitHub Pages or deployed live site link here  
-🌐 [Live Preview](https://food-recipe-finder-two.vercel.app)
-
----
-
-## 🧰 Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript
-- Local Storage/ Sessional Storage
+- 🧑‍💼 **Role-Based Dashboards** – Admin, Driver, and Student
+- 🚌 **Real-Time Bus Tracking** – Integrated with GPS modules
+- 🕐 **Live Timetables & Scheduling**
+- 📍 **Route Mapping** – Using Google Maps API / OpenStreetMap
+- 🧾 **Digital Boarding Logs** – Auto-updated with timestamps
+- 📣 **Instant Notifications and Announcements**
+- 📊 **Analytics Dashboard for Admin**
+- 📨 **Contact and Feedback Form with Email Integration**
+- 🔐 **JWT Authentication** with protected routes
 
 ---
 
-## ✨ Features
+## 🔧 Tech Stack
 
-- 🔐 Login and Signup (UI only)
-- 🏠 Beautiful Home Page with recipe categories
-- 🍳 Explore a list of popular recipes
-- 🔍 Search recipes by ingredient or name
-- 🧾 View recipe details with instructions
-- 💔 Wishlist support (UI for empty state shown)
-- 📱 Fully Responsive for mobile and tablet screens
+| Technology | Description |
+|------------|-------------|
+| **Frontend** | React.js, HTML5, CSS3, JavaScript |
+| **Backend**  | Node.js, Express.js |
+| **Database** | MongoDB Atlas |
+| **IoT Integration** | GPS Module for Live Bus Status |
+| **Authentication** | JWT, Bcrypt |
+| **Deployment** | Vercel (Frontend), Render (Backend) |
 
 ---
 
-## 📦 Installation Guide
+## 🌐 Live Demo
 
-> Follow these steps to run the project locally
+▶️ [https://adityatransporthub.vercel.app](https://adityatransporthub.vercel.app)
 
-# Clone the repository
-git clone https://github.com/nryadav18/food-recipe-finder.git
+---
 
-# Navigate to the project folder
-cd food-recipe-finder
+## 🖼️ Screenshots
 
-# Open the index.html file in your browser
+<p align="center">
+  <img src="./screenshots/login.png" alt="Login Page" width="30%">
+  <img src="./screenshots/admin-dashboard.png" alt="Admin Dashboard" width="30%">
+  <img src="./screenshots/bus-tracking.png" alt="Bus Tracking Page" width="30%">
+</p>
+<p align="center">
+  <img src="./screenshots/student-dashboard.png" alt="Student Dashboard" width="30%">
+  <img src="./screenshots/driver-dashboard.png" alt="Driver Dashboard" width="30%">
+  <img src="./screenshots/analytics.png" alt="Analytics Dashboard" width="30%">
+</p>
+
+---
+
+###  Clone the Repository
+
+```bash
+git clone https://github.com/nryadav18/ath.frontend.git
+cd ath.frontend
