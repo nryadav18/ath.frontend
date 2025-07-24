@@ -93,12 +93,12 @@ Aditya Transport Hub (ATH) is a **MERN Stack + IoT-based Smart Transport Managem
 git clone https://github.com/nryadav18/ath.frontend.git
 ```
 
-# Install Dependencies
+### Install Dependencies
 ```bash
 npm install
 ```
 
-# Run the Frontend
+### Run the Frontend
 ```bash
 npm run dev
 ```
