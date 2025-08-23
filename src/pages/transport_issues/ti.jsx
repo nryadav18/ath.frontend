@@ -30,7 +30,7 @@ const TransportIssues = () => {
             issue: '',
             status : false,
         });
-        axios.post("https://ath-backend.onrender.com/feedback",formData)
+        axios.post("https://ath-backend-v2.onrender.com/feedback",formData)
         .then(res=>{
             console.log("data sent to DB")
         })

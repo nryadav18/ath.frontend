@@ -29,7 +29,7 @@ function GetMyBus() {
     // Initial bus data fetch
     useEffect(() => {
         setLoading(true);
-        axios.get("https://ath-backend.onrender.com/bus-data")
+        axios.get("https://ath-backend-v2.onrender.com/bus-data")
             .then(resp => {
                 setBusList(resp.data);
             })
@@ -67,7 +67,7 @@ function GetMyBus() {
 
     const fetchBusData = (endpoint) => {
         setLoading(true);
-        axios.get(`https://ath-backend.onrender.com/${endpoint}`)
+        axios.get(`https://ath-backend-v2.onrender.com/${endpoint}`)
             .then(resp => {
                 setBusList(resp.data);
             })

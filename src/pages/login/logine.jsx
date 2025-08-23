@@ -153,7 +153,7 @@ function Login() {
       setShowRightImage(true);
       setAnimateRightImage(true);
       const myEmail = { email: formValues.email }
-      axios.post("https://ath-backend.onrender.com/send-mail", myEmail)
+      axios.post("https://ath-backend-v2.onrender.com/send-mail", myEmail)
         .then(success => {
           console.log("OTP Sent Successfully")
         })
@@ -207,7 +207,7 @@ function Login() {
     else {
 
       const upd = { email: formValues.email1, password: formValues.password2 }
-      axios.post("https://ath-backend.onrender.com/change-password", upd)
+      axios.post("https://ath-backend-v2.onrender.com/change-password", upd)
         .then(succ => {
           setIsSignUpMode(false);
           setIsForgotPasswordMode(false);
@@ -250,9 +250,9 @@ function Login() {
     }
     else {
       const checkMail = { email: formValues.email1 }
-      axios.post("https://ath-backend.onrender.com/check-mail", checkMail)
+      axios.post("https://ath-backend-v2.onrender.com/check-mail", checkMail)
         .then(succ => {
-          succ.data ? axios.post("https://ath-backend.onrender.com/send-mail", checkMail)
+          succ.data ? axios.post("https://ath-backend-v2.onrender.com/send-mail", checkMail)
             .then(success => {
               console.log("OTP Sent Successfully")
               setShowOtpInput(true);
@@ -286,7 +286,7 @@ function Login() {
 
   const handleChangePassword = (e) => {
     e.preventDefault();
-    axios.get("https://ath-backend.onrender.com/otp-validation")
+    axios.get("https://ath-backend-v2.onrender.com/otp-validation")
       .then(otpVerify => {
         console.log(otpVerify)
         console.log(inpOTP2)
@@ -316,7 +316,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault()
     const myData = { rollNumber: formValues.rollNumber, password: formValues.password }
-    axios.post("https://ath-backend.onrender.com/check-user-data", myData)
+    axios.post("https://ath-backend-v2.onrender.com/check-user-data", myData)
       .then(succ => {
         succ.data ? navigate('/home-page') : setErrorMessage3("Invalid Roll Number and Password")
       })
@@ -327,11 +327,11 @@ function Login() {
 
   const handleVerify = (e) => {
     e.preventDefault()
-    axios.get("https://ath-backend.onrender.com/otp-validation")
+    axios.get("https://ath-backend-v2.onrender.com/otp-validation")
       .then(otpVerify => {
         if (otpVerify.data == inpOTP) {
           const myData = { rollNumber: formValues.rollNumber1, password: formValues.password1, email: formValues.email }
-          axios.post("https://ath-backend.onrender.com/signup-data-insertion", myData)
+          axios.post("https://ath-backend-v2.onrender.com/signup-data-insertion", myData)
             .then(suc => {
               console.log("New Account Created")
             })
