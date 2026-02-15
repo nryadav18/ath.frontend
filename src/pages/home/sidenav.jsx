@@ -11,14 +11,20 @@ const menuImages = {
     'Live Track': 'https://img.icons8.com/ios/452/route.png',  // GPS Tracking icon
     'Issues': 'https://img.icons8.com/ios/452/map-marker.png',  // Directions icon
     'Profile': 'https://img.icons8.com/ios/452/user.png',  // Profile icon
+    'Privacy': 'https://img.icons8.com/ios/452/security-checked.png', // Privacy icon
+    'About': 'https://img.icons8.com/ios/452/info.png', // About icon
+    'Contact': 'https://img.icons8.com/ios/452/phone.png', // Contact icon
 };
 
 const Routes = {
-    'Home' : '/home-page',
-    'Get Bus' : '/get-my-bus',
-    'Live Track' : '/live-tracking',
-    'Issues' : '/transport-issues',
-    'Profile' : '/user-profile'
+    'Home': '/home-page',
+    'Get Bus': '/get-my-bus',
+    'Live Track': '/live-tracking',
+    'Issues': '/transport-issues',
+    'Profile': '/user-profile',
+    'Privacy': '/privacy-policy',
+    'About': '/about',
+    'Contact': '/contact'
 }
 
 
@@ -64,35 +70,35 @@ const SideNav = () => {
     };
 
     return (
-        <>     
-        <div ref={sidenavRef} className={`darksoul-sidenav ${isCollapsed ? 'collapsed' : ''}`}>
-            <div className="homee_header">
-                <div className="home_profile">
-                    <div className="home_profile-pic" ref={pimg}>
-                    </div>
-                </div>
-                <div className="home_btn">
-                    <div ref={togglerRef} className="circle" onClick={toggle}>
-                        <img ref={togglerIconRef} width="10" height="10" src={isCollapsed ? "https://img.icons8.com/metro/26/forward.png" : "https://img.icons8.com/metro/26/back.png"} alt="toggle icon" />
-                    </div>
-                </div>
-            </div>
-            <div className="home_menus">
-                <p ref={menuName}>Menu</p>
-                <div className="home_menu-container">
-                    {['Home', 'Get Bus','Live Track','Issues','Profile'].map((menu, index) => (
-                        <div key={index} className="home_menu" onClick={()=>{navigate(Routes[menu])}}>
-                            <div className="home_menu-img">
-                                <img src={menuImages[menu]} alt={menu} width="25" height="25" />
-                            </div>
-                            <div ref={el => menuNamesRef.current[index] = el} className="home_menu-name">
-                                <a><p>{menu}</p></a>
-                            </div>
+        <>
+            <div ref={sidenavRef} className={`darksoul-sidenav ${isCollapsed ? 'collapsed' : ''}`}>
+                <div className="homee_header">
+                    <div className="home_profile">
+                        <div className="home_profile-pic" ref={pimg}>
                         </div>
-                    ))}
+                    </div>
+                    <div className="home_btn">
+                        <div ref={togglerRef} className="circle" onClick={toggle}>
+                            <img ref={togglerIconRef} width="10" height="10" src={isCollapsed ? "https://img.icons8.com/metro/26/forward.png" : "https://img.icons8.com/metro/26/back.png"} alt="toggle icon" />
+                        </div>
+                    </div>
+                </div>
+                <div className="home_menus">
+                    <p ref={menuName}>Menu</p>
+                    <div className="home_menu-container">
+                        {['Home', 'Get Bus', 'Live Track', 'Issues', 'Profile', 'Privacy', 'About', 'Contact'].map((menu, index) => (
+                            <div key={index} className="home_menu" onClick={() => { navigate(Routes[menu]) }}>
+                                <div className="home_menu-img">
+                                    <img src={menuImages[menu]} alt={menu} width="25" height="25" />
+                                </div>
+                                <div ref={el => menuNamesRef.current[index] = el} className="home_menu-name">
+                                    <a><p>{menu}</p></a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
         </>
 
     );

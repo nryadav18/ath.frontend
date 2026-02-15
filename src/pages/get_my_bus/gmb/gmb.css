@@ -1,5 +1,5 @@
 .gmb_main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -16,10 +16,12 @@
 .gmb_map {
     width: 70vw;
     height: 100vh;
+
     img {
         height: 100vh;
         width: 70vw;
     }
+
     padding: 20px;
 }
 
@@ -39,6 +41,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
+
     input {
         height: 40px;
         width: 335px;
@@ -62,7 +65,7 @@
     transition: .3s;
 }
 
-.gmb_but:hover{
+.gmb_but:hover {
     background-color: #219653;
 }
 
@@ -88,7 +91,8 @@
     transition: .3s;
     color: white;
 }
-.gmb_refresh:hover{
+
+.gmb_refresh:hover {
     background-color: #2980B9;
 }
 
@@ -193,6 +197,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
         height: 80px;
         width: 80px;
@@ -209,6 +214,7 @@
     flex-direction: column;
     text-align: center;
     align-content: center;
+
     .bus_no {
         font-size: 26px;
         font-weight: 900;
@@ -297,100 +303,136 @@
     }
 }
 
-@media only screen and (max-width: 1460px){
-    .gmb_map{
+@media only screen and (max-width: 1460px) {
+    .gmb_map {
         width: 60vw;
     }
-    .gmb_cards{
+
+    .gmb_cards {
         width: 40vw;
     }
 }
-@media only screen and (max-width: 1100px){
-    .gmb_map{
+
+@media only screen and (max-width: 1100px) {
+    .gmb_map {
         width: 55vw;
     }
-    .gmb_cards{
+
+    .gmb_cards {
         width: 45vw;
     }
-    .map-directions-container{
+
+    .map-directions-container {
         flex-direction: column;
     }
-    .map-view,.directions-panel{
+
+    .map-view,
+    .directions-panel {
         height: 50%;
         width: 100%;
     }
 }
-@media only screen and (max-width: 975px){
-    .gmb_map{
+
+@media only screen and (max-width: 975px) {
+    .gmb_map {
         width: 50vw;
     }
-    .gmb_cards{
+
+    .gmb_cards {
         width: 50vw;
     }
 }
-@media only screen and (max-width: 880px){
-    .gmb_map{
+
+@media only screen and (max-width: 880px) {
+    .gmb_map {
         width: 40vw;
     }
-    .gmb_cards{
+
+    .gmb_cards {
         width: 60vw;
     }
 }
-@media only screen and (max-width: 770px){
-    .gmb_map{
+
+@media only screen and (max-width: 770px) {
+    .gmb_map {
         height: fit-content;
     }
-    .gmb_main{
+
+    .gmb_main {
         flex-wrap: wrap;
     }
-    .gmb_map,.gmb_cards{
+
+    .gmb_map,
+    .gmb_cards {
         width: 100vw;
     }
-    .gmb_search{
+
+    .gmb_cards {
+        height: auto;
+    }
+
+    .gmb_buslist {
+        height: auto;
+        overflow-y: visible;
+    }
+
+    .gmb_search {
         justify-content: center;
         gap: 30px;
     }
 }
-@media only screen and (max-width: 450px){
-    .map-container{
+
+@media only screen and (max-width: 450px) {
+    .map-container {
         height: 150vh !important;
     }
-    .gmb_search{
+
+    .gmb_search {
         gap: 20px;
     }
-    .gmb_inpbut,.gmb_but{
+
+    .gmb_inpbut,
+    .gmb_but {
         height: 50px;
-        input{
+
+        input {
             height: 50px;
         }
     }
-    .gmb_but{
+
+    .gmb_but {
         width: 80px;
     }
-    .gmb_refresh{
+
+    .gmb_refresh {
         height: 50px;
         width: 50px;
     }
-    .gmb_buscard{
+
+    .gmb_buscard {
         width: 360px;
-        padding:8px;
+        padding: 8px;
         height: 120px;
     }
+
     .driver_pic {
         height: 90px;
         width: 90px;
         justify-content: center;
+
         img {
             height: 75px;
             width: 75px;
         }
     }
-    .driver_details{
+
+    .driver_details {
         gap: 10px;
     }
-    .bus_but{
-        .get_directions{
-            .get_directions_but{
+
+    .bus_but {
+        .get_directions {
+            .get_directions_but {
                 height: 95%;
                 width: 100%;
                 font-size: 16px;
@@ -399,49 +441,61 @@
     }
 }
 
-@media only screen and (max-width: 410px){
-    .gmb_search{
+@media only screen and (max-width: 410px) {
+    .gmb_search {
         gap: 10px;
     }
-    .gmb_inpbut{
+
+    .gmb_inpbut {
         width: 280px;
-        input{
+
+        input {
             width: 250px;
         }
     }
-    .ground_details{
+
+    .ground_details {
         gap: 0px;
-        .ground{
+
+        .ground {
             font-size: 14px;
         }
     }
-    .gmb_buscard{
+
+    .gmb_buscard {
         height: 160px;
         width: 310px;
         flex-wrap: wrap;
     }
-    .driver_details{
-        .bus_no{
+
+    .driver_details {
+        .bus_no {
             font-size: 22px;
         }
-        .driver_name{
+
+        .driver_name {
             font-size: 14px;
         }
     }
-    .bus_but{
+
+    .bus_but {
         width: 100%;
         height: 50px;
         flex-direction: row;
-        .bus_status{
-            img{
+
+        .bus_status {
+            img {
                 height: 85%;
                 width: 75%;
             }
+
             width: 40%;
         }
-        .get_directions{
+
+        .get_directions {
             width: 60%;
-            .get_directions_but{
+
+            .get_directions_but {
                 width: 100%;
                 height: 95%;
                 font-size: 18px;
@@ -449,28 +503,34 @@
         }
     }
 }
-@media only screen and (max-width: 370px){
-    .ground_details{
+
+@media only screen and (max-width: 370px) {
+    .ground_details {
         justify-content: center;
         gap: 10px;
-        .ground{
+
+        .ground {
             font-size: 12px;
         }
     }
 }
-@media only screen and (max-width: 350px){
-    .gmb_buscard{
+
+@media only screen and (max-width: 350px) {
+    .gmb_buscard {
         width: 300px;
     }
+
     .driver_pic {
         height: 70px;
         width: 70px;
+
         img {
             height: 65px;
             width: 65px;
         }
     }
-    .driver_details{
+
+    .driver_details {
         gap: 10px;
     }
 }
@@ -613,4 +673,3 @@
 .map-view [class$="map"] [class$="transit-line"] {
     fill: #dfd2ae;
 }
-

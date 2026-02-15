@@ -48,12 +48,13 @@
     font-size: 200px;
     text-align: start;
     letter-spacing: 5px;
-    height:  fit-content;
+    height: fit-content;
     position: absolute;
     width: 125%;
     left: 5%;
     text-wrap: wrap;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    ;
 }
 
 
@@ -173,7 +174,7 @@
     background: -webkit-linear-gradient(25deg, #333, var(--first));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 2px solid var(--first) ;
+    border: 2px solid var(--first);
     font-size: 20px;
 }
 
@@ -196,10 +197,12 @@
         bottom: 18%;
         left: 10%;
     }
-    .home_container h2{
+
+    .home_container h2 {
         font-size: 25px;
     }
-    .home_button{
+
+    .home_button {
         left: 17.5%;
         top: 50%;
     }
@@ -215,10 +218,12 @@
         font-size: 150px;
         left: 15%;
     }
-    .home_h11{
+
+    .home_h11 {
         left: 15%;
     }
-    .home_h11 h1{
+
+    .home_h11 h1 {
         font-size: 40px;
     }
 
@@ -251,7 +256,8 @@
         top: 65%;
         left: 8%;
     }
-    .home_h11 h1{
+
+    .home_h11 h1 {
         font-size: 30px;
     }
 
@@ -271,11 +277,13 @@
         left: 27%;
         width: 17%;
     }
-    .home_container{
+
+    .home_container {
         left: 8%;
         top: 80%;
     }
-    .home_container h2{
+
+    .home_container h2 {
         font-size: 20px;
     }
 
@@ -325,7 +333,7 @@
         left: 12%;
         top: 50%;
         font-size: 20px;
-        color:#DFDFDF ;
+        color: #DFDFDF;
     }
 
     .home_button {
@@ -340,6 +348,7 @@
         border-radius: 50px;
     }
 }
+
 @media screen and (max-width: 376px) {
     .home_parent {
         background: linear-gradient(#DFDFDF 50%,
@@ -387,6 +396,7 @@
         left: 15%;
         width: 30%;
     }
+
     .home_button a {
         font-size: 18px;
         height: 10px;
@@ -424,7 +434,7 @@
 
     .home_parent {
         background: linear-gradient(to bottom right,
-                #DFDFDF ,
+                #DFDFDF,
                 var(--first));
     }
 }

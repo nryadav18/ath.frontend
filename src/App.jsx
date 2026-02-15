@@ -10,8 +10,11 @@ import BusCoordinatorCards from './pages/bus_coordinator/bc';
 import { HomePage } from './pages/home/home';
 import Login from './pages/login/logine';
 import LayoutWithSideNav from './pages/layout/LayoutWithSideNav';
+import PrivacyPolicy from './pages/policies/PrivacyPolicy';
+import About from './pages/info/About';
+import Contact from './pages/info/Contact';
 
-function App() { 
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -23,6 +26,9 @@ function App() {
           {/* <Route path="user-profile" element={<UserProfile />} /> */}
           <Route path="bus-coordinators" element={<BusCoordinatorCards />} />
           <Route path="home-page" element={<HomePage />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Err404 />} />
         </Route>
       </Routes>

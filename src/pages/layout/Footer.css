@@ -1,0 +1,85 @@
+.footer {
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+    /* Ensure it sits above the mobile navigation bar which likely has a high z-index */
+    position: relative;
+    z-index: 10;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* For larger screens, maybe we want them in a row */
+.footer-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links li a:hover {
+    color: var(--first);
+}
+
+.footer-links li a img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links li a:hover img {
+    opacity: 1;
+}
+
+.footer-copyright {
+    color: #888;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        /* Add enough padding bottom to not be hidden by the mobile nav bar if it's fixed */
+        padding-bottom: 80px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        /* Stack links on very small screens or keep row if space permits */
+        align-items: center;
+        gap: 15px;
+    }
+}
